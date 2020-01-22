@@ -41,8 +41,10 @@ Route::get('/mypost', function () {
 
 Auth::routes();
 
+Route::get('/profile/{user}', 'ProfilesController@show')->name('profile.show');
+
 Route::get('/p/create' , 'PostsController@create');
+
 Route::post('/p' , 'PostsController@store');
 
-Route::get('/home', 'HomeController@index')->name('home');
  
