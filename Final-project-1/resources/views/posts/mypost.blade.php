@@ -11,7 +11,7 @@
 </div>
 <div class="col-9 p-5" >
             <div class="d-flex justify-content-between">
-            <a href="/p/create">پست جدید را اضافه کنید</a>
+            <a href="/create">پست جدید را اضافه کنید</a>
             </div>
             
 </div>
