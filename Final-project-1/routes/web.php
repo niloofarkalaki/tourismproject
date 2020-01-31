@@ -15,7 +15,22 @@
     return view('welcome');
 });*/
 
+Route::group(['middleware' => ['auth']] ,function(){
+    Route::get('/userpage', function () {
+        return view('userpage');
+    }); 
+    Route::get('/myprofile', function () {
+        return view('profiles/myprofile');
+    }); 
+    Route::get('/mypost', function () {
+        return view('posts/mypost');
+    }); 
+
+});
 Route::get('/', function () {
+    return view('home');
+});
+Route::get('/home', function () {
     return view('home');
 });
 Route::get('/contactus', function () {
@@ -24,18 +39,7 @@ Route::get('/contactus', function () {
 Route::get('/aboutus', function () {
     return view('menuitems/aboutus');
 }); 
-Route::get('/login', function () {
-    return view('login');
-}); 
-Route::get('/userpage', function () {
-    return view('userpage');
-}); 
-Route::get('/myprofile', function () {
-    return view('profiles/myprofile');
-}); 
-Route::get('/mypost', function () {
-    return view('posts/mypost');
-}); 
+
 
 
 
