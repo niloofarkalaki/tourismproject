@@ -12,7 +12,7 @@ class PostsController extends Controller
             $this->middleware('auth');
     }
     
-    public function show($user )
+    public function show($user)
     {
          $user = User::findOrFail($user);
           return view('posts.mypost' , ['user' => $user] );
@@ -43,7 +43,7 @@ class PostsController extends Controller
             'caption' =>$data['caption'],
             'image' => $imagePath,
         ]);
-        return redirect('/post/' . auth()->user()->id);
+        return redirect('/mypost/' . auth()->user()->id);
     }
 
     

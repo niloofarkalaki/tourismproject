@@ -10,6 +10,7 @@
 پست های من
 </div>
 <div class="col-9 p-5" >
+
             <div class="d-flex justify-content-between"><h1>{{ $user->username }}</h1></div>
             <div class="d-flex ">
                 <div class="pr-3 d-flex "> <h3 > {{ $user->posts->count() }}:  تعداد پست </h3></div>

@@ -71,7 +71,7 @@
                                     </a>
                                     </li>
                                     <li><a class="dropdown-item" href="/myprofile">پروفایل من</a></li>
-                                    <li><a class="dropdown-item" href="/mypost">پست‌های من</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('mypost.show', [auth()->user()->id])}}">پست‌های من</a></li>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
