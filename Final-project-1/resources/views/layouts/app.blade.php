@@ -7,7 +7,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{"وب‌سایت رسمی گردشگری"}} - @yield('title')</title>
+    <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="52x52">
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

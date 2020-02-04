@@ -1,7 +1,7 @@
 
 @extends('layouts.app')
 
-@section('title','تماس با ما')
+@section('title','درباره‌ی ما')
 @section('content')
 <div class="container">
 درباره ما
