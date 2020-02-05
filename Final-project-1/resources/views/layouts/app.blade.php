@@ -70,7 +70,7 @@
                                         {{ __('خروج') }}
                                     </a>
                                     </li>
-                                    <li><a class="dropdown-item" href="/myprofile">پروفایل من</a></li>
+                                    <li><a class="dropdown-item" href="{{ route('myprofile.show', [auth()->user()->id])}}">پروفایل من</a></li>
                                     <li><a class="dropdown-item" href="{{ route('mypost.show', [auth()->user()->id])}}">پست‌های من</a></li>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
