@@ -1,5 +1,6 @@
 
 @extends('layouts.app')
+@section('title',' پست‌ها')
 
 
 @section('content')
@@ -16,7 +17,7 @@
                 <div class="pr-3 d-flex "> <h3 > {{ $user->posts->count() }}:  تعداد پست </h3></div>
 
             </div>
-            <a href="/create">پست جدید را اضافه کنید</a>
+           <a href="/create" class="d-flex"><bottun class="btn btn-primary"> پست جدید را اضافه کنید</bottun></a>
             
             <div class="row pt-4">
         @foreach ($user->posts as $post)

@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title','پست جدید')
 
 @section ('content')
 <div class="container">
@@ -24,7 +25,7 @@
                     
                 </div>
                 <div class="row pt-4">
-                    <button class="btn btn-primary">پست جدید را اضافه کنید</button>
+                    <button class="btn btn-primary ">پست جدید را اضافه کنید</button>
                 </div>
         </div>
     </div>
