@@ -46,7 +46,7 @@ Route::get('/aboutus', function () {
 Auth::routes();
 
 Route::get('/myprofile/{user}', 'ProfilesController@show')->name('myprofile.show');
-Route::get('/mypost/{user}', 'PostsController@show')->name('mypost.show');
+
 Route::get('/create' , 'PostsController@create');
 
 Route::post('/p' , 'PostsController@store');

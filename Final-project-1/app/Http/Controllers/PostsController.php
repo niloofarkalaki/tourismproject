@@ -12,16 +12,18 @@ class PostsController extends Controller
             $this->middleware('auth');
     }
     
-    public function show($user)
-    {
-         $user = User::findOrFail($user);
-          return view('posts.mypost' , ['user' => $user] );
-        //   return view('posts.show', compact('post'));
-    }
-        //   public function show( $post)
-        //   {
-        //   return view('posts.show', compact('post'));
-        //   }
+    // public function show($user)
+    // {
+    //      $user = User::findOrFail($user);
+    //       return view('posts.mypost' , ['user' => $user] );
+    //     //   $post = Post::findOrFail($post);
+    //     //   return view('posts.show', compact('post'));
+          
+    // }
+          public function show( \App\Post $post)
+          {
+          return view('posts.show', compact('post'));
+          }
     
 
     public function create()
