@@ -51,6 +51,8 @@ Route::get('/create' , 'PostsController@create');
 
 Route::post('/p' , 'PostsController@store');
 Route::get('/p/{post}' , 'PostsController@show');
+Route::get('/p/{post}/edit' , 'PostsController@edit')->name('post.edit');
+Route::patch('/p/{post}' , 'PostsController@update')->name('post.update');
 
 
  
