@@ -11,6 +11,7 @@ class PostsController extends Controller
     {
             $this->middleware('auth');
     }
+
           public function show( \App\Post $post)
           {
           return view('posts.show', compact('post'));
@@ -64,9 +65,17 @@ class PostsController extends Controller
         }
         $post-> update(array_merge (
             $data,
-            ['image' => $imagePath]
+           [ 'image' => $imagePath]
+        
         ));
 
        return redirect ('/myprofile/'. auth()->user()->id);
     }
+    public function destroy(Post $post)
+    {
+  
+         
+          $post->delete($post);
+         return redirect('/myprofile/' . auth()->user()->id);
+  }
 }

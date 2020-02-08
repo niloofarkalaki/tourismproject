@@ -20,10 +20,16 @@
             <div class="row pt-4">
         @foreach ($user->posts as $post)
         <div class="col-4 pb-4">
-        
         <a href="/p/{{ $post->id }}">
             <img src="/storage/{{ $post->image }}" class="w-100">
             <div class="d-flex">
+            <div class="col-4" >
+            <form  action="/p/ {{$post->id}}" method="post">
+                    @csrf
+                    @method('delete')
+                    <button class="btn btn-primary w-100  " >حذف </button>
+                    </form>
+                    </div>
             <div class="col-4" ><a class="btn btn-primary  w-100"  href="/p/{{ $post->id }}">نمایش</a> </div>
           
             <div class="col-4" ><a class="btn btn-primary  w-100" href="/p/{{ $post->id }}/edit"> ویرایش</a> </div>
