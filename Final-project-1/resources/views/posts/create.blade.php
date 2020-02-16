@@ -5,7 +5,7 @@
 <div class="container">
     <form action="/p" enctype="multipart/form-data" method="post">
         @csrf
-        <div class="row"> 
+        <div > 
         <div class="col-8 offset-2">
             <div class="row">
             <h1>
@@ -15,7 +15,7 @@
         <div class="form-group row">
                             <label for="caption" class="col-md-4 col-form-label text-md-right">کپشن پست</label>
 
-                                <input id="caption" type="text" class="form-control @error('caption') is-invalid @enderror" name="caption" value="{{ old('caption') }}"  autocomplete="caption" autofocus>
+                                <input id="caption" type="text" style="text-align:right;height:300px "class="form-control @error('caption') is-invalid @enderror" name="caption" value="{{ old('caption') }}"  autocomplete="caption" autofocus>
 
                             
                         </div>
