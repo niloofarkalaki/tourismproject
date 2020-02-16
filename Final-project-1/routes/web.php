@@ -22,10 +22,6 @@ Route::group(['middleware' => ['auth']] ,function(){
     Route::get('/myprofile', function () {
         return view('profiles/myprofile');
     }); 
-    Route::get('/mypost', function () {
-        return view('posts/mypost');
-    }); 
-
 });
 Route::get('/', function () {
     return view('home');

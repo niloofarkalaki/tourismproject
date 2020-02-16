@@ -27,7 +27,7 @@
                 <div class="row" >
                           
 
-                             <input id="caption" type="text"  class="form-control input-lg @error('caption') is-invalid @enderror" name="caption" value="{{ old('caption') ?? $post->caption}}"  autocomplete="caption" autofocus>
+                             <input id="caption" type="text" style="text-align:right;height:300px "  class="form-control input-lg @error('caption') is-invalid @enderror" name="caption" value="{{ old('caption') ?? $post->caption}}"  autocomplete="caption" autofocus>
 
                 </div>
                 <div class="row pt-4 ">

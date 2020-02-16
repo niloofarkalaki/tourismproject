@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94d4bf9ac7f4a933030e46a346ee2917",
+    "content-hash": "39efc157039b3debd978d43e5d9aad73",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1428,6 +1428,60 @@
                 "uuid"
             ],
             "time": "2019-12-17T08:18:51+00:00"
+        },
+        {
+            "name": "sallar/jdatetime",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sallar/jDateTime.git",
+                "reference": "0e6028c1a5019af57705b1d2e624db6cd9d0646d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sallar/jDateTime/zipball/0e6028c1a5019af57705b1d2e624db6cd9d0646d",
+                "reference": "0e6028c1a5019af57705b1d2e624db6cd9d0646d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "jdatetime.class.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sallar Kaboli",
+                    "email": "sallar.kaboli@gmail.com",
+                    "homepage": "http://sallar.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Jalali (Shamsi) DateTime class written in PHP, Supports year higher than 2038",
+            "homepage": "http://sallar.me/projects/jdatetime/",
+            "keywords": [
+                "Jalali",
+                "date",
+                "datetime",
+                "farsi",
+                "iran",
+                "jalalidate",
+                "jdatetime",
+                "persian",
+                "shamsi",
+                "time"
+            ],
+            "time": "2017-04-17T07:07:23+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4729,7 +4783,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "sallar/jdatetime": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
