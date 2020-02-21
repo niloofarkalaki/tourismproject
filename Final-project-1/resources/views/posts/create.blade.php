@@ -15,9 +15,9 @@
         <div class="form-group row">
                             <label for="caption" class="col-md-4 col-form-label text-md-right">کپشن پست</label>
 
-                                <input id="caption" type="text" style="text-align:right;height:300px "class="form-control @error('caption') is-invalid @enderror" name="caption" value="{{ old('caption') }}"  autocomplete="caption" autofocus>
+                                <!-- <input id="caption" type="text" style="text-align:right;height:300px "class="form-control @error('caption') is-invalid @enderror" name="caption" value="{{ old('caption') }}"  autocomplete="caption" autofocus> -->
 
-                            
+                            <textarea name="caption" id="caption" cols="100" rows="15" ></textarea>
                         </div>
                 <div class="row">
                 <label for="image" class="col-md-4 col-form-label text-md-right">عکس پست</label>

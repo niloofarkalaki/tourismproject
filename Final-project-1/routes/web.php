@@ -23,12 +23,9 @@ Route::group(['middleware' => ['auth']] ,function(){
         return view('profiles/myprofile');
     }); 
 });
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/','homeController@show');
+
+Route::get('/home','homeController@show');
 Route::get('/contactus', function () {
     return view('menuitems/contactus');
 }); 

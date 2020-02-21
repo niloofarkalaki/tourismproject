@@ -36,6 +36,7 @@
             <div class="col-4" ><a class="btn btn-primary  w-100" href="/p/{{ $post->id }}/edit"> ویرایش</a> </div>
             </div>
         </div>
+        <div class="col-sm-1"></div>
         @endforeach
     </div>
 </div>
