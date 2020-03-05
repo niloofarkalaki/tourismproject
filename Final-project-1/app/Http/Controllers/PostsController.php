@@ -68,7 +68,7 @@ class PostsController extends Controller
            [ 'image' => $imagePath]
         
         ));
-
+    
        return redirect ('/myprofile/'. auth()->user()->id);
     }
     public function destroy(Post $post)
