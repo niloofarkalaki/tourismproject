@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\Privilege;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -53,6 +54,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'username' => ['required', 'string', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            
         ]);
     }
 
@@ -69,6 +71,20 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'username'=>$data['username'],
             'password' => Hash::make($data['password']),
+            
         ]);
     }
+
+    public function index() {
+        $privileges = [3,4];
+        $user->Privilege()->attach($privileges);
+        return redirect(url('/userpage'));
+    }
+
+
+      
+    
+
+    
 }
+    
