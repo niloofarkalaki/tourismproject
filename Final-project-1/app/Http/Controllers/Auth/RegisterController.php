@@ -56,6 +56,7 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             
         ]);
+        
     }
 
     /**
@@ -73,13 +74,15 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             
         ]);
-    }
 
-    public function index() {
         $privileges = [3,4];
         $user->Privilege()->attach($privileges);
-        return redirect(url('/userpage'));
+        return redirect(url('/register'));
     }
+
+    
+       
+    
 
 
       

@@ -42,8 +42,8 @@ class User extends Authenticatable
         return $this->hasMany(Post::class)->orderBy('created_at' , 'DESC');;
     }
 
-    public function privilage()
+    public function privilege()
     {
-        return $this->belongsToMany(privilage::class);
+        return $this->belongsToMany(Privilege::class);
     }
 }

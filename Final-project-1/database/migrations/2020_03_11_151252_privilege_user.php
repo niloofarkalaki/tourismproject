@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UserPrivilege extends Migration
+class PrivilegeUser extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class UserPrivilege extends Migration
      */
     public function up()
     {
-        Schema::create('user_privilege', function (Blueprint $table) {
+        Schema::create('privilege_user', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('privilege_id');
             $table->unsignedBigInteger('user_id');
@@ -30,6 +30,6 @@ class UserPrivilege extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('user_privileges');
+        Schema::dropIfExists('privilege_user');
     }
 }

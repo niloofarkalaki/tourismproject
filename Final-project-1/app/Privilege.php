@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Privilege extends Model
 {
-    protected $guarded =[]; 
+    protected $table ="privileges"; 
     public function user()
     {
         return $this->hasMany(User::class);

@@ -16,12 +16,13 @@
 });*/
 
 Route::group(['middleware' => ['auth']] ,function(){
-    Route::get('/userpage', function () {
+    Route::get('/userpage', function() {
         return view('userpage');
     }); 
     Route::get('/myprofile', function () {
         return view('profiles/myprofile');
     }); 
+    Route::get('/panel','UsersController@getPrivilege');
 });
 Route::get('/','homeController@show');
 
