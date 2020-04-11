@@ -11,9 +11,11 @@
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', 'PagesController@index');
+
 
 Route::group(['middleware' => ['auth']] ,function(){
     Route::get('/userpage', function() {
@@ -24,7 +26,7 @@ Route::group(['middleware' => ['auth']] ,function(){
     }); 
     Route::get('/panel','UsersController@getPrivilege');
 });
-Route::get('/','homeController@show');
+// Route::get('/','homeController@show');
 
 Route::get('/home','homeController@show');
 Route::get('/contactus', function () {
