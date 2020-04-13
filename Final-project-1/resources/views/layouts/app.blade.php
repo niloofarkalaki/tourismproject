@@ -23,7 +23,8 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+       
+        <nav class="navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                <img src="/images/logo.png" width="90">
@@ -85,7 +86,9 @@
 
         <main class="py-4">
             @yield('content')
+            <footer> @include('template.footer')</footer>
         </main>
+       
     </div>
     
 </body>
