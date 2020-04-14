@@ -56,8 +56,15 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('ثبت نام') }}</a>
                                 </li>
+                                
+                               
                             @endif
                         @else
+                        
+
+
+                            
+
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->username }} <span class="caret"></span>
@@ -72,6 +79,13 @@
                                     </li>
                                     <li><a class="dropdown-item" href="#">پروفایل کاربری</a></li>
                                     <li><a class="dropdown-item" href="{{ route('myprofile.show', [auth()->user()->id])}}">پست‌ها</a></li>
+                                    <li>
+                            <a class="dropdown-item" href="{{ route('users.index') }}">مدیریت کاربران</a>
+                        </li>
+
+                            <li>
+                                <a class="dropdown-item" href="{{ route('roles.index') }}">مدیریت قوانین</a>
+                            </li>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
@@ -85,11 +99,14 @@
         </nav>
 
         <main class="py-4">
+        <div class="container">
             @yield('content')
             <footer> @include('template.footer')</footer>
+</div>
         </main>
        
     </div>
+
     
 </body>
 </html>

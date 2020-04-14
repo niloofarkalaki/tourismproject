@@ -13,6 +13,9 @@
             پست جدید را اضافه کنید
             </h1>
             </div>
+            <div class="pull-right">
+                <a class="btn btn-primary" href="{{ route('posts.index') }}"> Back</a>
+            </div>
         <div class="form-group row">
                             <label for="caption" class="col-md-4 col-form-label text-right">
                             <h4>  کپشن پست</h4>

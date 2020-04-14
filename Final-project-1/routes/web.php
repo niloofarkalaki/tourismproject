@@ -18,15 +18,16 @@ Route::get('/', 'PagesController@index');
 
 
 Route::group(['middleware' => ['auth']] ,function(){
-    Route::get('/userpage', function() {
-        return view('userpage');
+    //  Route::get('/userpage', function() {
+    //      return view('userpage');
+    Route::resource('roles','RolesController');
+    Route::resource('users','UsersController');
+    Route::resource('posts','PostsController');
     }); 
     Route::get('/myprofile', function () {
         return view('profiles/myprofile');
     }); 
-    Route::get('/panel','UsersController@getPrivilege');
-});
-// Route::get('/','homeController@show');
+   
 
 Route::get('/home','homeController@show');
 Route::get('/contactus', function () {

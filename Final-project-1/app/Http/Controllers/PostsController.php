@@ -9,8 +9,25 @@ class PostsController extends Controller
 {
     public function __construct()
     {
-            $this->middleware('auth');
+            // $this->middleware('auth');
+            $this->middleware('permission:post-list|post-create|post-edit|post-delete', ['only' => ['index','show']]);
+            $this->middleware('permission:post-create', ['only' => ['create','store']]);
+            $this->middleware('permission:post-edit', ['only' => ['edit','update']]);
+            $this->middleware('permission:post-delete', ['only' => ['destroy']]);
     }
+
+     /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $posts = Post::latest()->paginate(5);
+        return view('posts.index',compact('posts'))
+            ->with('i', (request()->input('page', 1) - 1) * 5);
+    }
+
 
           public function show( \App\Post $post)
           {
@@ -37,7 +54,8 @@ class PostsController extends Controller
             'caption' =>$data['caption'],
             'image' => $imagePath,
         ]);
-        return redirect('/myprofile/' . auth()->user()->id);
+        return redirect('/myprofile/' . auth()->user()->id)
+                       ->with('success','Product created successfully.');
     }
 
 
@@ -69,13 +87,15 @@ class PostsController extends Controller
         
         ));
     
-       return redirect ('/myprofile/'. auth()->user()->id);
+       return redirect ('/myprofile/'. auth()->user()->id)
+                       ->with('success','Product updated successfully');
     }
     public function destroy(Post $post)
     {
   
          
           $post->delete($post);
-         return redirect('/myprofile/' . auth()->user()->id);
+         return redirect('/myprofile/' . auth()->user()->id)
+                        ->with('success','Product deleted successfully');
   }
 }
