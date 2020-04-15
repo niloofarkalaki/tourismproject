@@ -13,21 +13,25 @@ label{
 body {
 	margin: 0;
 	padding: 0;
+
+	flex-grow: 1;
+    overflow: auto;
+    min-height: 2em;
+
 }
 nav{
-	background-color: #FF7043;
+	background-color: #ffffff;
 }
-.nav-item{
+.nav-item .nav-link{
 	font: bold 16px sans-serif;
-
+	color: #ffffff;
 }
 
-footer{
-	
-	position: fixed;
-	bottom: 0;
-	height: 230px;
-}
+footer {
+	flex-shrink: 0;
+	bottom: 0px;
+
+ }
 .footer-distributed{
 	background-color: #F4511E;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -35,7 +39,7 @@ footer{
 	width: 100%;
 	text-align: right;
 	font: bold 16px sans-serif;
-
+bottom: 0cm;
 	padding: 55px 50px;
 	margin-top: 80px;
 }

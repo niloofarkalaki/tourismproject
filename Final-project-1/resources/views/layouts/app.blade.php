@@ -101,8 +101,9 @@
         <main class="py-4">
         <div class="container">
             @yield('content')
-            <footer> @include('template.footer')</footer>
-</div>
+            
+</div >
+ @include('template.footer')
         </main>
        
     </div>
