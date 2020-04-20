@@ -52,5 +52,8 @@ Route::get('/p/{post}/edit' , 'PostsController@edit')->name('post.edit');
 Route::patch('/p/{post}' , 'PostsController@update')->name('post.update');
 Route::delete('/p/{post}' , 'PostsController@destroy')->name('post.destroy');
 
+Route::post('/comment/store', 'CommentsController@store')->name('comment.add');
+Route::post('/reply/store', 'CommentsController@replyStore')->name('reply.add');
+
 
  
