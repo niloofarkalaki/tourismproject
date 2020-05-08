@@ -9,6 +9,13 @@ label{
 .card-header,.card-body{
 	text-align: right;
 }
+.header {
+	padding: 60px;
+	text-align: center;
+	background: #33383b;
+	color: white;
+	font-size: 30px;
+  }
 
 body {
 	margin: 0;

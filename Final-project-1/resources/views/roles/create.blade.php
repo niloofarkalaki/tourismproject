@@ -2,6 +2,7 @@
 
 
 @section('content')
+<div class="container">
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
@@ -49,8 +50,9 @@
         <button type="submit" class="btn btn-primary">ثبت</button>
     </div>
 </div>
-{!! Form::close() !!}
 
+{!! Form::close() !!}
+</div>
 
 
 @endsection
