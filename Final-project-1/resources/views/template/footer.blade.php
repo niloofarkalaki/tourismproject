@@ -13,7 +13,16 @@
 </head>
 
 	<body>
+		
 		<footer class="footer-distributed">
+		<div class="row">
+			<div class="small-6 columns">
+				<div class="footer-content">
+					<h1>وب سایت گردشگری استان تهران</h1>
+					<p>شما میتوانید مکان های گردشگری استان تهران را باهم مقایسه کنید و بهترین مکان را برای گردشگری خود انتخاب کنید. </p>
+				</div>
+			</div>
+		</div>
 
 			<div class="footer-left">
       <p class="footer-company-about">
@@ -63,9 +72,21 @@
 </p>
 
 			</div>
+			<div class="row">
+			<div class="small-12 columns">
+				<div class="footer-border"></div>
+				<div class="footer-about__">
+					
+					<p>© 2020_shariaty_univercity</p>
+				</div>
+			</div>
+		</div>
 
 		</footer>
 
 	</body>
 
 </html> 
+
+
+

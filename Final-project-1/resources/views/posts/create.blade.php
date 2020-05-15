@@ -7,17 +7,15 @@
     <form action="/p" enctype="multipart/form-data" method="post">
         @csrf
         <div > 
-        <div class="col-md-6 createForm">
+        <div class="col-md-12 createForm">
             <div class="row">
             <h1>
             پست جدید را اضافه کنید
             </h1>
             </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('posts.index') }}"> Back</a>
-            </div>
+           
         <div class="form-group row">
-                            <label for="caption" class="col-md-4 col-form-label text-right">
+                            <label for="caption" class="col-md-12 col-form-label text-right">
                             <h4>  کپشن پست</h4>
 
                             </label>
@@ -34,8 +32,8 @@
                 </div>
                 <div class="form-group row pt-4">
                     <button class="btn btn-primary ">پست جدید را اضافه کنید</button>
+                    
                 </div>
-
         </div>
     </div>
     </form>

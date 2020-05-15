@@ -10,6 +10,10 @@
 	background: url(../images/Tourism-3.jpg) no-repeat center center fixed ;
 	background-size: cover;
   background-position: top center;
+   font-weight: 100;
+   height: 100vh;
+   margin: 0;
+ 
  
   }
 

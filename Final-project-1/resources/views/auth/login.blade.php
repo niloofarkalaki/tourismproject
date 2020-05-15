@@ -1,10 +1,10 @@
+
 @extends('layouts.app')
 @section('title', ' ورود')
 @section('content')
 <div class="container">
-
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-8 col-md-offset-2">
             <div class="card">
                 <div class="card-header text-center"  >{{ __('ورود به سایت') }}</div>
 
@@ -72,3 +72,4 @@
     </div>
 </div>
 @endsection
+
