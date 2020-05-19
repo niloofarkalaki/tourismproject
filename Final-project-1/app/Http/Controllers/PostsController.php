@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use App\Post;
+use Spatie\Searchable\Search;
 class PostsController extends Controller
 {
     public function __construct()
@@ -23,9 +24,11 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $posts = Post::latest()->paginate(5);
-        return view('posts.index',compact('posts'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+        // $posts = Post::latest()->paginate(5);
+        // return view('posts.index',compact('posts'))
+        //     ->with('i', (request()->input('page', 1) - 1) * 5);
+            $posts = Post::with('caption')->get();
+    return view('posts.show', compact('posts'));
     }
 
 
@@ -98,4 +101,14 @@ class PostsController extends Controller
          return redirect('/myprofile/' . auth()->user()->id)
                         ->with('success','Product deleted successfully');
   }
+
+public function search(Request $request)
+{
+    $searchResults = (new Search())
+        ->registerModel(Post::class, 'caption')
+        
+        ->perform($request->input('query'));
+
+    return view('search', compact('searchResults'));
+}
 }

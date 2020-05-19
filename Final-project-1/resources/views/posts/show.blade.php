@@ -56,7 +56,7 @@
 					
 					</div>
     </div>
-	</div>
+
 
 						<!-- <h5 class="card-header" >نظر دهید</h5>
 						<div class="card-body">
