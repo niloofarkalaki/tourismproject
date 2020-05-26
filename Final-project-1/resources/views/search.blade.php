@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-<body>
+@extends('layouts.app')
+@section('title',' خانه')
+@section('content')
 	<div class="card">
-    <div class="card-header"><b>{{ $searchResults->count() }} results found for "{{ request('query') }}"</b></div>
+    <div class="card-header"><b> نتایج جستجو برای "{{ request('query') }}":{{ $searchResults->count() }} </b></div>
 
     <div class="card-body">
 
@@ -22,5 +18,4 @@
 
     </div>
 </div>
-</body>
-</html>
+@endsection

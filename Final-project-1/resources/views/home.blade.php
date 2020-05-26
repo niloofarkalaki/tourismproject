@@ -14,22 +14,24 @@
         @endif
     </div>
 </div>
-
+<div style="text-align: center;
+            padding: 5px 40px;">
 <form action="{{ route('search') }}" method="POST">
     @csrf
     
-    <input type="text" name="query" />
+    <input type="text" name="query" style=" font-weight: 600;
+    font-size: 16px;"/>
     <input type="submit" class="btn btn-sm btn-primary" value="Search" />
 </form>
-
+</div>
 <div class="content-home" >
-    <div class="container-fluid">      
+    <div class="container-fluid" >      
         @forelse($Post as $post)     
             <div class="col-sm-5  product-box">
             <!-- <h2 class="image">{{$post->image}}</h2><br><br> -->
-            <img src="/storage/{{$post->image}}"class="w-100">
+            <img src="/storage/{{$post->image}}"class="w-100" style="border-radius: 8px">
             <!-- <span class="caption">{{$post->caption}}</span> -->
-            <p style="rtl;text-align:center">
+            <p style="rtl;text-align:center ;padding: 10px 20px;">
             {{$post->caption }}
             </p>
     </div>

@@ -14,7 +14,7 @@
 
 	<body>
 		
-		<footer class="footer-distributed">
+		<footer class="footer">
 		<div class="row">
 			<div class="small-6 columns">
 				<div class="footer-content">
@@ -87,6 +87,8 @@
 	</body>
 
 </html> 
+
+
 
 
 
