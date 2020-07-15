@@ -1,8 +1,6 @@
 
 @extends('layouts.app')
 @section('title',' پروفایل')
-
-
 @section('content')
 
 <div class="container" style="margin-top: 20px">
@@ -38,7 +36,7 @@
         @endforeach
     </div>
 </div>
-</div>
+</div></div>
 @endsection
 
 

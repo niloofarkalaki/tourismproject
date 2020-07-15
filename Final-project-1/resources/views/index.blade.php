@@ -7,7 +7,7 @@
 <style>
   body  {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	background: url(../images/Tourism-3.jpg) no-repeat center center fixed ;
+	background: url(../images/world-travel-background_101.jpg) no-repeat center center fixed ;
 	background-size: cover;
   background-position: top center;
    font-weight: 100;

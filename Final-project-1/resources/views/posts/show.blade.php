@@ -5,29 +5,26 @@
 			<div class="row">
 				<div class="col-md-8">
 					<div class="card mb-4">
-                    <img src="/storage/{{$post->image}}" class="w-100" class="card-img-top">
+                   	 <img src="/storage/{{$post->image}}" class="w-100" class="card-img-top">
 						<div class="card-body">
-                        <h5>نویسنده {{$post->user->username }} </h5>
+                       		 <h5>نویسنده {{$post->user->username }} </h5>
 							<p class="card-text">
                             {{$post->caption }}
                             <p>
 								<a href="#" class="btn btn-info">ادامه مطلب</a>
-						</div>
+				  		</div>
                     </div>
-                    
-
-
-
-    <div class="row pt-3">
-    <div class="col-md-12">
-    <div class="card mb-4 ">
-	<h4 class="card-header">
-	نمایش نظرات
-	</h4>
+				</div>
+			</div>
+    
+			
 	
 	<div class="row pt-3">
     <div class="col-md-12">
     <div class="card mb-4 ">
+	<h4 class="card-header">
+			نمایش نظرات
+	</h4>
 	<div class="card-body">
 							<div class="row">
 								<div class="col-md-12">
@@ -39,7 +36,7 @@
 							<div class="row">
 							<div class="col-md-12">
 							
-								<h4 class="card-header" >نظر دهید</h4>
+								<h4  >نظر دهید</h4>
 							</div>
 							</div>
 							
@@ -55,9 +52,11 @@
                     </form>
 					
 					</div>
-    </div>
+	</div>
+	</div></div></div>
 
-
+</div>
+@endsection
 						<!-- <h5 class="card-header" >نظر دهید</h5>
 						<div class="card-body">
 							<div class="row">
@@ -87,4 +86,3 @@
                 
 
 
-@endsection

@@ -22,10 +22,14 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+
+    
     <div id="app">
-       
+    
         <nav class="navbar navbar-expand-md navbar-light shadow-sm">
+            
             <div class="container">
+            
                 <a class="navbar-brand" href="{{ url('/') }}">
                <img src="/images/logo.png" width="90">
                 </a>
@@ -48,6 +52,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/contactus">{{ __('تماس با ما') }}</a>
                             </li>
+                            
+
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('ورود') }}</a>
@@ -93,20 +99,29 @@
                                 </ul>
                             </li>
                         @endguest
+                        <div style="text-align: left;
+                                padding: 5px 40px;">
+                                    <form action="{{ route('search') }}" method="POST">
+                                     @csrf
+                                    <button type="submit" class="btn btn-sm btn-primary">جست‌وجو</button>
+                                    <input type="text" name="query" style=" font-weight: 600;
+                                    font-size: 16px;"/>
+                                    </form>
+                            </div>
                     </ul>
                 </div>
             </div>
+            
         </nav>
-
+        
+        
+        
         <main class="py-4">
             @yield('content')
-            
-
- @include('template.footer')
+            @include('template.footer')
         </main>
        
     </div>
-
     
 </body>
 </html>

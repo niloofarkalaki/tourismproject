@@ -14,12 +14,12 @@
 
 	<body>
 		
-		<footer class="footer">
+		<footer class="footer" height="10px">
 		<div class="row">
 			<div class="small-6 columns">
 				<div class="footer-content">
 					<h1>وب سایت گردشگری استان تهران</h1>
-					<p>شما میتوانید مکان های گردشگری استان تهران را باهم مقایسه کنید و بهترین مکان را برای گردشگری خود انتخاب کنید. </p>
+					
 				</div>
 			</div>
 		</div>
