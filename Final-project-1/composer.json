@@ -14,7 +14,7 @@
         "laravel/tinker": "^1.0",
         "laravelcollective/html": "^5.8.0",
         "sallar/jdatetime": "dev-master",
-        "spatie/laravel-permission": "^3.11",
+        "spatie/laravel-permission": "^3.13",
         "spatie/laravel-searchable": "^1.6",
         "yajra/laravel-datatables-oracle": "^9.10"
     },
