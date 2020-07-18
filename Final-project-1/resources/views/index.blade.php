@@ -36,8 +36,12 @@ header {
    
 }
   h1{
+
+  color: white;
+  text-shadow: 2px 2px 5px black, 0 0 15px blue, 0 0 10px darkblue;
   font-weight: bold;
   text-align: center;
+  font-size: 50px;
 }
 
 header a {
@@ -63,7 +67,18 @@ main{
     align-items: center;
     text-align: center;
 }
- 
+
+p.italic {
+  font-style: italic;
+  font-weight:bold;
+  font-size: 20px;
+  
+}
+p{
+  color: white;
+  background-color:rgb(0,200,200,0.3);
+  text-shadow: 3px 3px blue;
+  }
 
 </style>
 </head>
@@ -74,12 +89,12 @@ main{
     <header>
               <main>
                   <h1>خوش امدید</h1>
-                  <p> 
+                  <p class="italic"> 
                   گردشگری در ایران به عنوان یک صنعت از ظرفیت‌های بسیار بالایی برای رشد و توسعه برخوردار است.بر اساس گزارش سازمان جهانی جهانگردی،گردشگری در ایران رتبه دهم جاذبه‌های باستانی و تاریخی و رتبه‌ پنجم جاذبه‌های طبیعی را در جهان دارا است و یکی از امن‌ترین کشورهای منطقه و جهان از لحاظ امنیت برای گردشگران خارجی است.در سال 2008، در حدود 2 ميليون گردشگر خارجی از ایران بازدید کرده‌اند و این در حالی است که در این سال ۸۴۲ میلیون جهانگرد در دنیا سفر کرده‌اند.
                   </p>
               </main>
               
-              <a href="/home" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">وارد سایت شوید</a>
+              <a href="/home "class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">وارد سایت شوید</a>
               
   
   </header>
