@@ -44,7 +44,7 @@
                     <ul class="navbar-nav ">
                         <!-- Authentication Links -->
                         <li class="nav-item">
-                                <a class="nav-link" href="/">{{ __('خانه') }}</a>
+                                <a class="nav-link" href="/home">{{ __('خانه') }}</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/aboutus">{{ __('درباره‌ی ما') }}</a>
@@ -83,7 +83,7 @@
                                         {{ __('خروج') }}
                                     </a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#">پروفایل کاربری</a></li>
+                                    <!-- <li><a class="dropdown-item" href="#">پروفایل کاربری</a></li> -->
                                     <li><a class="dropdown-item" href="{{ route('myprofile.show', [auth()->user()->id])}}">پست‌ها</a></li>
                                     <li>
                             <a class="dropdown-item" href="{{ route('users.index') }}">مدیریت کاربران</a>

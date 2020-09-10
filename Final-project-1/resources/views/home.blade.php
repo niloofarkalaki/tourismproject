@@ -22,7 +22,7 @@
             <!-- <h2 class="image">{{$post->image}}</h2><br><br> -->
            <a href="/p/{{ $post->id }}" > <img src="/storage/{{$post->image}}"class="w-100" style="border-radius: 8px "></a>
             <!-- <span class="caption">{{$post->caption}}</span> -->
-            <p style="rtl;text-align:center ;padding: 10px 20px;">
+            <p style="rtl;text-align:center ;padding: 10px 20px; color: #0000e6; font-size: 20px;">
             {{$post->caption }}
             </p>
     </div>
