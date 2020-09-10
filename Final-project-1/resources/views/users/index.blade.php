@@ -3,14 +3,15 @@
 
 @section('content')
 <div class="row">
-    <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
-            <h2>مدیریت کاربران</h2>
+<div class="col-lg-12 margin-tb" >
+        <div  style="text-align:center;font-size:40px; font-weight: bold; text-shadow: 2px 2px 5px blue">
+            <h1>مدیریت کاربران</h1>
         </div>
-        <div class="pull-right">
+        <div style="text-align:center">
             <a class="btn btn-success" href="{{ route('users.create') }}"> ایجاد کاربر جدید</a>
         </div>
     </div>
+</div>
 </div>
 
 
@@ -22,7 +23,7 @@
 
 
 <table class="table table-bordered">
- <tr>
+ <tr style="text-align:center">
    <th>شماره</th>
    <th>نام</th>
    <th>نام کاربری</th>
@@ -31,7 +32,7 @@
    <th width="280px">اقدامات</th>
  </tr>
  @foreach ($data as $key => $user)
-  <tr>
+  <tr style="text-align:center">
     <td>{{ ++$i }}</td>
     <td>{{ $user->name }}</td>
     <td>{{ $user->username }}</td>

@@ -1,16 +1,15 @@
 @extends('layouts.app')
 
 
-@section('content')
+
 <div class="container">
+@section('content')
 <div class="row">
     <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
-            <h2>ویرایش سطح دسترسی</h2>
+        <div style="text-align:center;font-size:40px; font-weight: bold; text-shadow: 2px 2px 5px blue">
+            <h1>ویرایش سطح دسترسی</h1>
         </div>
-        <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('roles.index') }}"> بازگشت</a>
-        </div>
+       
     </div>
 </div>
 
@@ -29,14 +28,15 @@
 
 {!! Form::model($role, ['method' => 'PATCH','route' => ['roles.update', $role->id]]) !!}
 <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="form-group">
+    <div class="col-lg-12 margin-tr">
+        <div style="text-align:center;font-size:20px;color:#001a33;">
             <strong> سطح دسترسی:</strong>
             {!! Form::text('name', null, array('placeholder' => 'کاربر / مدیر','class' => 'form-control')) !!}
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12">
-        <div class="form-group">
+    <div class="row" >
+    <div class="col-lg-12 margin-tr">
+        <div  style="text-align:center;font-size:20px; padding-right: 640px;color:#001a33;" >
             <strong>دسترسی ها:</strong>
             <br/>
             @foreach($permission as $value)
@@ -46,11 +46,16 @@
             @endforeach
         </div>
     </div>
+    </div>
     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
         <button type="submit" class="btn btn-primary">ثبت</button>
+            <a class="btn btn-primary" href="{{ route('roles.index') }}"> بازگشت</a>
+        </div>
     </div>
+   
+    @endsection
 </div>
 {!! Form::close() !!}
 
 
-@endsection
+
