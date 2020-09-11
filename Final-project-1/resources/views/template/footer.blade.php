@@ -16,20 +16,19 @@
 		
 		<footer class="footer" height="10px">
 		<div class="row">
-			<div class="small-6 columns">
-				<div class="footer-content">
+			<div class="small-12 columns">
+				<div class="footer-content" style="text-align:center;font-size:40px; font-weight: bold; text-shadow: 2px 2px 5px blue" >
 					<h1>وب سایت گردشگری استان تهران</h1>
 					
 				</div>
 			</div>
 		</div>
 
-			<div class="footer-left">
-      <p class="footer-company-about">
-					<span>درباره‌ی ما</span>
+			<div class="footer-left" > 
+      <p class="footer-company-about" style="color:white">
+					<!-- <span>درباره‌ی ما</span> -->
 					تماس با ما
 				</p>
-
 				<div class="footer-icons">
 
 					<a href="#"><i class="fa fa-facebook"></i></a>
@@ -46,17 +45,19 @@
 
 				<div>
 					<i class="fa fa-map-marker"></i>
-					<p><span>ادرس شرکت</span> ایران , تهران</p>
+					<p> ایران , تهران</p>
 				</div>
 
-				<div>
+				<!-- <div>
 					<i class="fa fa-phone"></i>
 					<p>تلفن شرکت</p>
-				</div>
+				</div> -->
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p >Nilooklaki@yahoo.com</p>
+					<p >Nilooklaki@yahoo.com </br>
+					    AtiyeMogharnas@gmail.com
+					</p>
 				</div>
 
 			</div>
@@ -65,10 +66,10 @@
 
       <h3>گردشگری</h3>
 
-<p class="footer-links">
-  <div><a href="#">خانه</a></div>	
+<p class="footer-links" >
+  <div style="color:#001a33;"><a href="/home">خانه</a></div>	
   <div><a href="#">بلاگ</a></div>
-  <div>	<a href="#">درباره ما</a></div>				
+  <div>	<a href="/aboutus">درباره ما</a></div>				
 </p>
 
 			</div>
