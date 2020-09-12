@@ -83,7 +83,6 @@
                                         {{ __('خروج') }}
                                     </a>
                                     </li>
-                                    <!-- <li><a class="dropdown-item" href="#">پروفایل کاربری</a></li> -->
                                     <li><a class="dropdown-item" href="{{ route('myprofile.show', [auth()->user()->id])}}">پست‌ها</a></li>
                                     <li>
                             <a class="dropdown-item" href="{{ route('users.index') }}">مدیریت کاربران</a>

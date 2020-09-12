@@ -57,30 +57,7 @@
 
 </div>
 @endsection
-						<!-- <h5 class="card-header" >نظر دهید</h5>
-						<div class="card-body">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="user">نام و نام خانواگی:</label>
-										<input type="text" class="form-control" id="user">
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label for="user">پست الکترونیک:</label>
-										<input type="text" class="form-control" id="user">
-									</div>
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="cmnt">نظر شما:</label>
-								<textarea class="form-control" rows="5" id="cmnt"></textarea>
-							</div>
-							<button type="button" class="btn btn-info">ارسال نظر</button>
-                        </div>
-                        </div>
-					</div> -->
+
 					
 					
                 

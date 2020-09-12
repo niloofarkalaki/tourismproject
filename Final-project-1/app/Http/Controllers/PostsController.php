@@ -10,7 +10,6 @@ class PostsController extends Controller
 {
     public function __construct()
     {
-            // $this->middleware('auth');
             $this->middleware('permission:post-list|post-create|post-edit|post-delete', ['only' => ['index','show']]);
             $this->middleware('permission:post-create', ['only' => ['create','store']]);
             $this->middleware('permission:post-edit', ['only' => ['edit','update']]);
@@ -24,11 +23,8 @@ class PostsController extends Controller
      */
     public function index()
     {
-        // $posts = Post::latest()->paginate(5);
-        // return view('posts.index',compact('posts'))
-        //     ->with('i', (request()->input('page', 1) - 1) * 5);
             $posts = Post::with('caption')->get();
-    return view('posts.show', compact('posts'));
+            return view('posts.show', compact('posts'));
     }
 
 
