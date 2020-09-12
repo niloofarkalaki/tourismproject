@@ -92,7 +92,7 @@ html {
 <div class="row"  >
   <div class="column" style="float: left; width: 33.3%; margin-bottom: 16px; padding: 0 8px; text-align: right; ">
     <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); margin: 8px;">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT8Ou8wqcjgEPXciVcv3wdv6DoVLZiDNkaKWw&usqp=CAU" alt="Jane" style="width:100%">
+      <img src="https://thumbs.dreamstime.com/b/girl-working-computer-dreaming-resort-travelling-flat-cartoon-person-work-desktop-pc-thinking-relaxing-adventure-journey-127734188.jpg" alt="Jane" style="width:100%">
       <div class="container" style="padding: 0 16px;">
         <h2>نیلوفر کلاکی</h2>
         <p class="title" style=" color: grey;">مهندس نرم افزار</p>
@@ -106,7 +106,7 @@ html {
 
   <div class="column" style="float: left; width: 33.3%; margin-bottom: 16px; padding: 0 8px; text-align: right;">
     <div class="card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); margin: 8px;">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT8Ou8wqcjgEPXciVcv3wdv6DoVLZiDNkaKWw&usqp=CAU" alt="Mike" style="width:100%">
+      <img src="https://thumbs.dreamstime.com/b/business-woman-happy-working-office-work-place-vector-illustration-flat-cartoon-female-person-sitting-table-workplace-156939620.jpg" alt="Mike" style="width:100%">
       <div class="container">
         <h2>عطیه مغرنس</h2>
         <p class="title" style=" color: grey;">مهندس نرم افزار</p>

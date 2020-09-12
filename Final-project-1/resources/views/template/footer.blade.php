@@ -25,9 +25,9 @@
 		</div>
 
 			<div class="footer-left" > 
-      <p class="footer-company-about" style="color:white">
+      <p class="footer-company-about" style="color:white; padding-top:15px">
 					<!-- <span>درباره‌ی ما</span> -->
-					تماس با ما
+					ما را در شبکه های اجتماعی دنبال کنید
 				</p>
 				<div class="footer-icons">
 
@@ -64,21 +64,21 @@
 
 			<div class="footer-right">
 
-      <h3>گردشگری</h3>
+      <h4 style="color:white; padding-top:15px">دسترسی های سریع</h4>
 
 <p class="footer-links" >
   <div style="color:#001a33;"><a href="/home">خانه</a></div>	
-  <div><a href="#">بلاگ</a></div>
+  <div><a href="/login">ورود</a></div>
   <div>	<a href="/aboutus">درباره ما</a></div>				
 </p>
 
 			</div>
 			<div class="row">
-			<div class="small-12 columns">
+			<div class="small-6 columns">
 				<div class="footer-border"></div>
 				<div class="footer-about__">
 					
-					<p>© 2020_shariaty_univercity</p>
+					<p style="color:white">© 2020_shariaty_univercity</p>
 				</div>
 			</div>
 		</div>
